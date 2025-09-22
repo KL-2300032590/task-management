@@ -24,24 +24,24 @@ mvn spring-boot:run
 ## Example curl
 Create:
 ```bash
-curl -X PUT http://localhost:8080/tasks \
+curl -X PUT http://localhost:9333/tasks \
   -H "Content-Type: application/json" \
   -d '{"id":"task1","name":"HelloTask","owner":"Alice","command":"echo Hello, World!"}'
 ```
 
 Get all:
 ```bash
-curl http://localhost:8080/tasks
+curl http://localhost:9333/tasks
 ```
 
 Execute:
 ```bash
-curl -X PUT http://localhost:8080/tasks/task1/execute
+curl -X PUT http://localhost:9333/tasks/task1/execute
 ```
 
 Delete:
 ```bash
-curl -X DELETE http://localhost:8080/tasks/task1
+curl -X DELETE http://localhost:9333/tasks/task1
 ```
 
 ## Notes
